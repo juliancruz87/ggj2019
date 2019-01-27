@@ -24,6 +24,7 @@ public class LightIntesityController : MonoBehaviour
 
     private void FixedUpdate ()
     {
+        
         RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(myTransform.position, myTransform.TransformDirection(Vector3.forward), out hit, maxDistance, layer))
@@ -38,5 +39,6 @@ public class LightIntesityController : MonoBehaviour
             Debug.Log("Did not Hit");
             light.color = initColor;
         }
+        
     }
 }
