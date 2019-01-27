@@ -24,9 +24,8 @@ public class PlayerController : MonoBehaviour
 		
 	void Start()
 	{
-		spotLight = gameObject.GetComponentInChildren<Light>();
+		//spotLight = gameObject.GetComponentInChildren<Light>();
 		timeToTurnOffLight = 7;
-		
 	}
 
 	void CheckForLight()
@@ -83,7 +82,7 @@ public class PlayerController : MonoBehaviour
 			
 			if (Physics.Linecast( point.position + castDown , point.position -  castDown, out hit ,  layerMaskFloor )) 
 			{
-				print("hit floor");
+				print("find floor pos ");
 				player.position = pos;
 			}
 			

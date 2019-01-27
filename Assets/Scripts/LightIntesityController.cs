@@ -30,13 +30,13 @@ public class LightIntesityController : MonoBehaviour
         if (Physics.Raycast(myTransform.position, myTransform.TransformDirection(Vector3.forward), out hit, maxDistance, layer))
         {
             Debug.DrawRay(myTransform.position, myTransform.TransformDirection(Vector3.forward) * hit.distance, Color.red);
-            Debug.Log("Did Hit");
+            //Debug.Log("Did Hit");
             light.color = lowColor;
         }
         else
         {
             Debug.DrawRay(myTransform.position, myTransform.TransformDirection(Vector3.forward) * 1000, Color.white);
-            Debug.Log("Did not Hit");
+            //Debug.Log("Did not Hit");
             light.color = initColor;
         }
         

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.095111065, g: 0.11865104, b: 0.15772316, a: 1}
+  m_IndirectSpecularColor: {r: 0.095111065, g: 0.11865104, b: 0.15772319, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -178,6 +178,11 @@ MonoBehaviour:
   layerMaskKeys:
     serializedVersion: 2
     m_Bits: 1024
+  spotLight: {fileID: 1567276633}
+  timeToTurnOffLight: 10
+  accelToTurnOnLight: 20
+  timeRangeLightOff: {x: 5, y: 10}
+  devicesAccel: 0
 --- !u!1001 &21973064
 Prefab:
   m_ObjectHideFlags: 0
@@ -8525,7 +8530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1144158578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9478,7 +9483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raycasterEventMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1536
   maxRaycastHits: 64
 --- !u!81 &1317620239
 AudioListener:
