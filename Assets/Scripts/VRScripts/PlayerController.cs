@@ -4,28 +4,67 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
+using UnityScript.Steps;
 
 public class PlayerController : MonoBehaviour
 {
 
 	public Transform point;
 	public Transform player;
+	public LayerMask layerMaskFloor;
+	public LayerMask layerMaskKeys;
+	public Light spotLight;
+	private Vector3 castDown =  new Vector3(0, 0.5f, 0);
+	public float timeToTurnOffLight = 10;
+	public int accelToTurnOnLight = 10;
 	
-	void Start () {
+	public Vector2 timeRangeLightOff = new Vector2(5,10);
 
+	public float devicesAccel;
+		
+	void Start()
+	{
+		spotLight = gameObject.GetComponentInChildren<Light>();
+		timeToTurnOffLight = 7;
+		
 	}
 
-	public LayerMask layerMaskFloor;
-	
-	public LayerMask layerMaskKeys;
-	
-	
-
-	private Vector3 castDown =  new Vector3(0, 0.5f, 0);
-
-	void Update () 
+	void CheckForLight()
 	{
-	
+		
+		
+		if (timeToTurnOffLight < 0 )
+		{
+			spotLight.enabled = false;
+			print("off light");
+		}
+		else
+		{
+			timeToTurnOffLight -= Time.deltaTime;
+		}
+
+		if (GvrControllerInput.Accel.magnitude > accelToTurnOnLight)
+		{
+			if(spotLight.enabled == false)
+				TurnOnlight();
+		}
+	}
+
+	void TurnOnlight()
+	{
+		spotLight.enabled = true;
+		timeToTurnOffLight = Random.Range(5 , 15 );
+		print(timeRangeLightOff);
+		print("ON light");
+	}
+
+	void Update ()
+	{
+		
+		CheckForLight();
+
+		devicesAccel = GvrControllerInput.Accel.magnitude;
+
 
 		if (Input.GetKeyUp(KeyCode.A) || GvrControllerInput.ClickButtonUp ) 
 		{
