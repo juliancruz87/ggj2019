@@ -6,15 +6,15 @@ using UnityEngine;
 public class CharacterAttack : MonoBehaviour
 {
 	public  Animator anim;
-
-	private GameObject player;	
+	public GameObject player;	
 	// Use this for initialization
 	void Start ()
 	{
 
-		var playerGO =  GameObject.FindObjectOfType<PlayerController>();
+		/*var playerGO =  GameObject.FindObjectOfType<PlayerController>();
 		if (playerGO)
 			player = playerGO.gameObject;
+			*/          
 
 
 	}
@@ -24,10 +24,11 @@ public class CharacterAttack : MonoBehaviour
 	{
 
 
-		if (player && Vector3.Distance(player.transform.position, transform.position) < 1)
-		{
-			anim.SetTrigger("Attack");
-		}
+	if ( Input.GetKeyUp(KeyCode.Space)|| Vector3.Distance(player.transform.position, transform.position) < 2)
+	{
+            print("attack");
+            anim.SetTrigger("Attack");
+	}   
 
 	}
 }
