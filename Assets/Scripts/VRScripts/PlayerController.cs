@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
 		devicesAccel = GvrControllerInput.Accel.magnitude;
 
 
-		if (Input.GetKeyUp(KeyCode.A) || GvrControllerInput.ClickButtonUp ) 
+        if (Input.GetKeyUp(KeyCode.A) || GvrControllerInput.ClickButtonUp ||  GvrControllerInput.AppButtonUp ) 
 		{
 			//var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
 			//go.transform.localScale = new Vector3(.2f ,.2f,.2f  );

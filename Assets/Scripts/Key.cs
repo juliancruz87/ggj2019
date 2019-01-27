@@ -7,11 +7,11 @@ public class Key : MonoBehaviour
 {
     [SerializeField]
     private GameObject particle;
-    public Inventory inventory;
+    private Inventory inventory;
 
 	private void Start()
 	{
-        //inventory = FindObjectOfType<Inventory>();
+        inventory = FindObjectOfType<Inventory>();
 	}
 
 #if UNITY_EDITOR
