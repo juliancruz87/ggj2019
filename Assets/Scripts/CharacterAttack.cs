@@ -24,7 +24,7 @@ public class CharacterAttack : MonoBehaviour
 	{
 
 
-	if ( Input.GetKeyUp(KeyCode.Space)|| Vector3.Distance(player.transform.position, transform.position) < 2)
+	if ( Input.GetKeyUp(KeyCode.Space)|| Vector3.Distance(player.transform.position, transform.position) < 4)
 	{
             print("attack");
             anim.SetTrigger("Attack");

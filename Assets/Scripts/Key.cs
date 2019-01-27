@@ -14,6 +14,7 @@ public class Key : MonoBehaviour
         //inventory = FindObjectOfType<Inventory>();
 	}
 
+#if UNITY_EDITOR
     public void Update()
     {
         if (Input.GetKeyUp(KeyCode.L)) {
@@ -21,6 +22,7 @@ public class Key : MonoBehaviour
             ClickInKey(null);
         }
     }
+#endif
 
     public void ClickInKey(BaseEventData eventData)
     {
