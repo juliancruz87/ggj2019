@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{8F4BBF40-4BFB-07E1-EC6F-2EE91E556C97}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ActionItem.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Key.cs" Line="6" Column="17" />
+      <File FileName="Assets/Scripts/ActionItem.cs" Line="6" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ggj2019 PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
