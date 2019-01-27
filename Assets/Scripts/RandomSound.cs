@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RandomSound : MonoBehaviour 
 {
@@ -26,14 +24,19 @@ public class RandomSound : MonoBehaviour
 	{
         if (timer < 0)
         {
-            timer = Random.Range(minTime, maxTime);
-            int audioIndex = Random.Range(0, clips.Length);
-            source.panStereo = Random.Range(-1, 1);
-            source.PlayOneShot(clips[audioIndex]);
+            PlayAction();
         }
         else
         {
             timer -= Time.deltaTime;
         }
-	}
+    }
+
+    protected virtual void PlayAction()
+    {
+        timer = Random.Range(minTime, maxTime);
+        int audioIndex = Random.Range(0, clips.Length);
+        source.panStereo = Random.Range(-1, 1);
+        source.PlayOneShot(clips[audioIndex]);
+    }
 }
