@@ -61,6 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FG3D\Animation\Mecanim\ControlScript.cs" />
+    <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\HairRenderer.cs" />
+    <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow.cs" />
+    <Compile Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadowSun.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Hello6DoFControllers\Scripts\DemoObjectController6DoF.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBeta.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerVisualMulti.cs" />
@@ -191,29 +195,44 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\LightIntesityController.cs" />
+    <Compile Include="Assets\Scripts\RandomSound.cs" />
     <Compile Include="Assets\Scripts\VRScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\VRScripts\VRKey.cs" />
     <Compile Include="Assets\Survival Starter Pack\water\waterscroll.cs" />
     <None Include="Assets\Survival Starter Pack\Readme.txt" />
     <None Include="Assets\Shader\SpotLightFX.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\StandardSpecular-doublesided.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_Universal.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\Volund_UnityStandardCore.cginc" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
     <None Include="Assets\Shaders\Shrink.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow_ShadowSample.cginc" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\Volund_StandardSpecularCharacter.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_UnityStandardInput.cginc" />
     <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\Standard-doublesided.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\Standard-2pass-doublesided-half depth.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrController.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Standard\Standard-2pass-doublesided.shader" />
     <None Include="Assets\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrControllerReticle.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\MorphSkinDeferred.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_setup.cginc" />
     <None Include="Assets\MeshSmith\ToonMonsterI\Toon Witch\readMe.txt" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Daydream.xml" />
     <None Include="Assets\GoogleVR\Demos\Shaders\HelloVR\HelloVRUnlitGrayscaleToColor.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrReticleShader.shader" />
     <None Include="Assets\Shaders\simpleWave2.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Skin\Volund_UnityStandardInput.cginc" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlay.shader" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\Hair\Hair_UnityStandardCore.cginc" />
     <None Include="Assets\GoogleVR\Plugins\Android\proguard-gvr.txt" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
+    <None Include="Assets\FG3D\Vendor\Unity\Shaders\UniqueShadow\UniqueShadow_DepthOnly.shader" />
     <None Include="Assets\Scripts\Volund_StandardSpecularCharacter.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="UnityEditor.StandardEvents">
