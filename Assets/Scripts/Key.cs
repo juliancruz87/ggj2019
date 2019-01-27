@@ -7,17 +7,26 @@ public class Key : MonoBehaviour
 {
     [SerializeField]
     private GameObject particle;
-    private Inventory inventory;
+    public Inventory inventory;
 
 	private void Start()
 	{
-        inventory = FindObjectOfType<Inventory>();
+        //inventory = FindObjectOfType<Inventory>();
 	}
 
-	public void ClickInKey(BaseEventData eventData)
+    public void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.L)) {
+
+            ClickInKey(null);
+        }
+    }
+
+    public void ClickInKey(BaseEventData eventData)
     {
         particle.SetActive(false);
-        gameObject.SetActive(false);
         inventory.Collect(this);
+        print("Collected key");
+        gameObject.SetActive(false);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour 
 {
     public event System.Action onCompleted;
-    private Key[] maxKeys;
+    Key[] maxKeys;
     private List<Key> collectedKeys;
 
 	private void Start()

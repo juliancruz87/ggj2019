@@ -193,9 +193,12 @@
     <Compile Include="Assets\Scripts\ActionItem.cs" />
     <Compile Include="Assets\Scripts\CharacterAttack.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\LightIntesityController.cs" />
     <Compile Include="Assets\Scripts\RandomSound.cs" />
+    <Compile Include="Assets\Scripts\RandomSoundAndPosition.cs" />
     <Compile Include="Assets\Scripts\VRScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\VRScripts\VRKey.cs" />
     <Compile Include="Assets\Survival Starter Pack\water\waterscroll.cs" />

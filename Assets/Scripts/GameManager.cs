@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour
     GameObject horrorSounds;
     [SerializeField]
     Light mainLight;
-    GameObject enemiesContainer;
+    public GameObject enemiesContainer;
+
+
 
     Inventory inventory;
 	private void Start () 
@@ -27,5 +29,9 @@ public class GameManager : MonoBehaviour
         enemiesContainer.SetActive(false);
         horrorSounds.SetActive(false);
         mainLight.enabled = true;
+        print("game end ");
     }
+
+
+
 }
